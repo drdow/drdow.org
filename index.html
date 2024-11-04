@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - drdow.org</title>
+    <style>
+        body {
+            background-color: #000;
+            color: #00FF00;
+            font-family: 'Courier New', Courier, monospace;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 20px;
+            border: 2px solid #00FF00;
+            display: flex;
+            flex-direction: column;
+        }
+
+        h1 {
+            text-transform: uppercase;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #ffff00;
+            font-size: 1.1em;
+            margin-bottom: 10px;
+        }
+
+        h2::before {
+            content: "> ";
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+        }
+
+        .section-title {
+            font-weight: bold;
+            color: #FFFFFF;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .contact-info p {
+            display: block;
+            margin: 0
+        }
+
+        a {
+            color: #00FF00;
+        }
+
+        a:hover {
+            color: #d4e0d4;
+        }
+    </style>
+</head>
+
+<body itemscope itemtype="https://schema.org/Person">
+    <div class="container">
+        <h1><span itemprop="name">Sergey Mamadjanov</span>'s homepage</h1>
+
+        <div class="section" itemprop="description">
+            <h2>About Me:</h2>
+            <p>👋Hi, I'm Sergey Mamadjanov, 27 y.o. IT Support Engineer at <a href="https://ucell.uz" target="_blank"
+                    itemprop="worksFor" itemscope itemtype="https://schema.org/Organization"><span
+                        itemprop="name">Ucell</span></a>, currently based in <span itemprop="address" itemscope
+                    itemtype="https://schema.org/Place"><span itemprop="addressLocality">Samarkand</span>, <span
+                        itemprop="addressCountry">Uzbekistan</span></span>.</p>
+        </div>
+
+        <div class="section" itemprop="knowsAbout">
+            <h2>Interests:</h2>
+            <p>Currently learning <span>Python</span> and <span>Rust</span> to enhance my technical skills and expand my
+                programming knowledge.
+            </p>
+        </div>
+
+        <div class="section">
+            <h2>Occupation:</h2>
+            <p itemprop="jobTitle">As an IT Support Engineer, I handle technical support, troubleshoot issues, and
+                maintain smooth system operations.</p>
+        </div>
+
+        <div class="section">
+            <h2>Location:</h2>
+            <p itemprop="address" itemscope itemtype="https://schema.org/Place"><span
+                    itemprop="addressLocality">Samarkand</span>, <span itemprop="addressCountry">Uzbekistan</span></p>
+        </div>
+
+        <div class="section contact-info">
+            <h2>Contact:</h2>
+            <p>Email: <a href="mailto:sm@drdow.org" class="link" itemprop="email">sm@drdow.org</a></p>
+            <p>GitHub: <a href="https://github.com/drdow" class="link" target="_blank"
+                    itemprop="sameAs">https://github.com/drdow</a></p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/drdow" class="link" target="_blank"
+                    itemprop="sameAs">https://linkedin.com/in/drdow</a></p>
+        </div>
+    </div>
+</body>
+
+</html>
